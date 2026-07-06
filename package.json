@@ -1,0 +1,26 @@
+{
+  "name": "dissid-audit-mcp",
+  "version": "0.1.0",
+  "description": "DISSID audit engine as an MCP server — funnel / a11y / LLM-visibility audits with a free tier and Lemon Squeezy license seam",
+  "type": "module",
+  "bin": {
+    "dissid-audit-mcp": "src/index.ts"
+  },
+  "scripts": {
+    "start": "bun run src/index.ts",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.4.3"
+  },
+  "engines": {
+    "bun": ">=1.1.0"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "^1.3.14",
+    "typescript": "^6.0.3"
+  }
+}
