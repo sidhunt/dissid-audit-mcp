@@ -1,9 +1,17 @@
 # Lemon Squeezy setup — DISSID products (Sid: ~5 min of clicks)
 
-Status 2026-07-06: LS account exists, API key set, **0 stores / 0 products**. The MCP
-license-validate path is wired + tested, and the dissid.ai Productized section
-(dissid-consultancy MR !13) renders a buy button for each product below the moment its
-checkout URL lands in the site env. Nothing earns a dollar until this exists.
+Status 2026-07-06: **DONE — store `dissid` (CAD) live, all 3 products PUBLISHED, wired into
+dissid.ai and deployed.** Buy buttons render live on https://dissid.ai. Checkout URLs recorded
+in `~/.claude/salesman/ls-checkout-urls.md`. Live checkout URLs:
+- Website Triple-Audit Bundle — CA$99 — https://dissid.lemonsqueezy.com/checkout/buy/00a6faa1-ff8a-4e75-83cb-d3678bceb189
+- DISSID Audit MCP — Pro — CA$19/mo — https://dissid.lemonsqueezy.com/checkout/buy/8eef0432-1923-4a52-90bb-91164d3b1b23
+- Fix-Sprint Deposit — CA$500 — https://dissid.lemonsqueezy.com/checkout/buy/2b1b0cca-118c-4ab8-840d-f34a7fd722ef
+
+⚠️ OPEN: (1) LS API key is still a placeholder — the MCP license-validate path needs the REAL
+key before Pro subscriptions can be validated. (2) Tax category defaulted to "SaaS - personal use"
+on all 3 (accountant's call — likely wrong for a B2B service/report). The MCP license-validate
+path is wired + tested; the site renders a buy button per product from its checkout URL in the
+site env (Vite build-time).
 
 ## 1. Create store (once)
 
